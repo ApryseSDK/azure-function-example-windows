@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36301.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "azure-function-app-windows", "azure-function-app-windows\azure-function-app-windows.csproj", "{B32F02E1-CEB5-FCCA-0AF8-A37091142B20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "azure-function-console-test", "azure-function-console-test\azure-function-console-test.csproj", "{C475609E-2AF6-4265-A562-372E31B2D3E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "azure-function-shared-library", "azure-function-shared-library\azure-function-shared-library.csproj", "{677DCE46-3B86-4405-B756-A591E34C98DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B32F02E1-CEB5-FCCA-0AF8-A37091142B20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B32F02E1-CEB5-FCCA-0AF8-A37091142B20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B32F02E1-CEB5-FCCA-0AF8-A37091142B20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B32F02E1-CEB5-FCCA-0AF8-A37091142B20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C475609E-2AF6-4265-A562-372E31B2D3E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C475609E-2AF6-4265-A562-372E31B2D3E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C475609E-2AF6-4265-A562-372E31B2D3E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C475609E-2AF6-4265-A562-372E31B2D3E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{677DCE46-3B86-4405-B756-A591E34C98DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{677DCE46-3B86-4405-B756-A591E34C98DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{677DCE46-3B86-4405-B756-A591E34C98DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{677DCE46-3B86-4405-B756-A591E34C98DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9BEECA96-9366-45B7-9772-DEF12D7AE336}
+	EndGlobalSection
+EndGlobal

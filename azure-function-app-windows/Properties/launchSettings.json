@@ -1,0 +1,15 @@
+{
+  "profiles": {
+    "azure_function_app_windows": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7076"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "containerRunArguments": "--init",
+      "httpPort": 31396,
+      "useSSL": false
+    }
+  }
+}

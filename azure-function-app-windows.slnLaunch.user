@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "azure-function-app-windows\\azure-function-app-windows.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "azure-function-console-test\\azure-function-console-test.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
