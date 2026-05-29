@@ -1,5 +1,5 @@
 # Azure Function Example for Windows
-This project provides a sample Azure Function that demonstrates how to convert Microsoft Word documents into PDF format using the Apryse PDFNet SDK. The function is invoked via an HTTP trigger and secured with function-level authentication. Designed for a Windows-based environment, this solution serves as a reference implementation for secure, serverless document processing workflows.
+This project provides a sample Azure Function that demonstrates how to convert Microsoft Office documents into PDF using the Apryse PDFNet SDK. The function is invoked via an HTTP trigger and secured with function-level authentication. Designed for a Windows-based environment, this solution serves as a reference implementation for secure, serverless document processing workflows.
 
 # Included Projects
   # azure-function-app-windows
@@ -12,11 +12,11 @@ This project provides a sample Azure Function that demonstrates how to convert M
 
   # azure-function-console-test
   A console application used to test the Azure Function end-to-end. It performs the following steps:
-  Uploads the input Word document to Azure Blob Storage, invokes the Azure Function via HTTP, and downloads the generated PDF from Azure Blob Storage
+  Uploads the input Microsoft Office document to Azure Blob Storage, invokes the Azure Function via HTTP, and downloads the generated PDF from Azure Blob Storage
   * Configuration requirements:
     * Function URL (including function key)
     * Azure Storage connection string
-    * Input and output Blob container names
+    * Input and output blob container names
 
   # azure-function-shared-library
   A shared class library used by both the function app and the console test project.
@@ -33,7 +33,7 @@ Choose the plan that best aligns with your workload and expected usage.
   * https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview 
 
 # Extension Modules
-The Aprye PDFNet SDK implements some extension modules to perform certain conversions; OCR, CAD, and Microsoft Office to PDF to name a few. The following modules have been confirmed to work in a Windows environment.
+The Aprye PDFNet SDK implements some extension modules to perform certain conversions; OCR, CAD, and PDF to Microsoft Office to name a few. The following modules have been confirmed to work in a Windows environment.
 *  OCR Module
    * https://docs.apryse.com/core/guides/ocr
 * Structured Output Module
@@ -42,9 +42,9 @@ The Aprye PDFNet SDK implements some extension modules to perform certain conver
   *  https://docs.apryse.com/core/guides/features/conversion/convert-cad-to-pdf
 * Data Extraction Module
   *  https://docs.apryse.com/core/guides/smart-data-extraction
-* PDF2HTML Reflow Paragraph Module
-  *  https://docs.apryse.com/core/guides/features/conversion/convert-pdf-to-html
+
 Note: The Windows HTML2PDF module will not run in a Azure function application due to permission restrictions in the Azure Windows environment. It is suggested to use a Linux container in this case.
 
-The included function example includes only Word to PDF conversions, to use the extension modules they are required to be located in the function ephemeral location.
+The included function example includes only Microsoft Office to PDF conversions, to use the extension modules they are required to be located in the function ephemeral location.
+  * Function Supported File Types: .doc, .docx, .ppt, .pptx, .xls, and .xlsx
 
