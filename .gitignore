@@ -55,3 +55,6 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+/.vs
+azure-function-app-windows/azure-function-app-windows.csproj.user
+azure-function-app-windows/local.settings.json
