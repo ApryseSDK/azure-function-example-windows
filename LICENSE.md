@@ -1,0 +1,1 @@
+Copyright (c) 2026 Apryse Software Inc. All Rights Reserved. Apryse PDFNet SDK project/codebase or any derived works is only permitted in solutions with an active commercial Apryse PDFNet SDK license. For exact licensing terms refer to the commercial PDFNet SDK license. For licensing, pricing, or product questions, Contact [Sales](https://apryse.com/form/contact-sales).
