@@ -4,7 +4,6 @@ using azure_function_shared_library;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Azure.Functions.Worker.Http;
 using Microsoft.Extensions.Logging;
-using pdftron.PDF;
 using System.Net;
 using System.Text.Json;
 
