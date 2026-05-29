@@ -1,5 +1,6 @@
 # Azure Function Example for Windows
 This project provides a sample Azure Function that demonstrates how to convert Microsoft Office documents into PDF using the Apryse PDFNet SDK. The function is invoked via an HTTP trigger and secured with function-level authentication. Designed for a Windows-based environment, this solution serves as a reference implementation for secure, serverless document processing workflows.
+  * Supported File Types: .doc, .docx, .ppt, .pptx, .xls, and .xlsx
 
 # Included Projects
   # azure-function-app-windows
@@ -46,5 +47,4 @@ The Aprye PDFNet SDK implements some extension modules to perform certain conver
 Note: The Windows HTML2PDF module will not run in a Azure function application due to permission restrictions in the Azure Windows environment. It is suggested to use a Linux container in this case.
 
 The included function example includes only Microsoft Office to PDF conversions, to use the extension modules they are required to be located in the function ephemeral location.
-  * Function Supported File Types: .doc, .docx, .ppt, .pptx, .xls, and .xlsx
 
