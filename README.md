@@ -2,8 +2,8 @@
 This project provides a sample Azure Function that demonstrates how to convert Microsoft Office documents into PDF using the Apryse PDFNet SDK. The function is invoked via an HTTP trigger and secured with function-level authentication. Designed for a Windows-based environment, this solution serves as a reference implementation for secure, serverless document processing workflows.
   * Supported File Types: .doc, .docx, .ppt, .pptx, .xls, and .xlsx
 
-# Included Projects
-  # azure-function-app-windows
+## Included Projects
+  ### azure-function-app-windows
   This Azure Function application is intended for deployment to your Azure environment. It implements an HTTP-triggered function secured with function-level authentication, using a function key passed in the request URL. This authentication model can be adjusted to align with your organization’s security requirements.
   * The sample function relies on two environment variables required by the Apryse PDFNet SDK:
     * PDFNET_SDK_LICENSE
@@ -11,7 +11,7 @@ This project provides a sample Azure Function that demonstrates how to convert M
     * AZURE_TEMP_DIRECTORY
       * This is the temporary directory for the input/output files. You should use "D:\local\temp\" which is the ephemeral storage for function instances.
 
-  # azure-function-console-test
+  ### azure-function-console-test
   A console application used to test the Azure Function end-to-end. It performs the following steps:
   Uploads the input Microsoft Office document to Azure Blob Storage, invokes the Azure Function via HTTP, and downloads the generated PDF from Azure Blob Storage
   * Configuration requirements:
@@ -19,11 +19,11 @@ This project provides a sample Azure Function that demonstrates how to convert M
     * Azure Storage connection string
     * Input and output blob container names
 
-  # azure-function-shared-library
+  ### azure-function-shared-library
   A shared class library used by both the function app and the console test project.
   * Provides common configuration settings and includes helper utilities for interacting with Azure Blob Storage (upload, download, delete operations)
 
-# Publishing
+## Publishing
 This function has been tested and can be deployed using either the **Consumption** or **Premium** Azure Function plans. 
 When selecting a plan, consider:
 - **Performance requirements** (processing time and throughput)
@@ -33,7 +33,7 @@ Choose the plan that best aligns with your workload and expected usage.
 * You can find more information on Azure hosting options here:
   * https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview 
 
-# Extension Modules
+## Extension Modules
 The Aprye PDFNet SDK implements some extension modules to perform certain conversions; OCR, CAD, and PDF to Microsoft Office to name a few. The following modules have been confirmed to work in a Windows environment.
 *  OCR Module
    * https://docs.apryse.com/core/guides/ocr
